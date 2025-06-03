@@ -15,19 +15,19 @@ const TeamSection = () => {
       name: 'Joseph Lawrence Hammond', 
       position: 'Executive Director', 
       firstName: 'joseph',
-      image: '/lovable-uploads/1dd3c04e-5828-4055-a392-ff8da9779934.png'
+      image: '/lovable-uploads/Jolah.png'
     },
     { 
       name: 'Agede Mawuena', 
       position: 'Deputy Executive Director/Operations', 
       firstName: 'agede',
-      image: '/lovable-uploads/Agede.png'
+      image: '/lovable-uploads/Agede 2.png'
     },
     { 
       name: 'Stanley Anku', 
       position: 'Business Development', 
       firstName: 'stanley',
-      image: '/lovable-uploads/Stanley.png'
+      image: '/lovable-uploads/Stanley 2.png'
     },
     { 
       name: 'Cece Abotsi', 
@@ -39,13 +39,13 @@ const TeamSection = () => {
       name: 'Michael Kumordzi Tetteh', 
       position: 'Head of Programs & Communications', 
       firstName: 'michael',
-      image: '/lovable-uploads/Michael.png'
+      image: '/lovable-uploads/Michael 2.png'
     },
     { 
       name: 'Caesar Seade', 
       position: 'Head of Research, Monitoring and Evaluation', 
       firstName: 'caesar',
-      image: '/lovable-uploads/Caeser.png'
+      image: '/lovable-uploads/Caesar 2.png'
     }
   ];
 
