@@ -1,0 +1,29 @@
+
+{
+  "name": "empowerAbility Org - Empower the ability, not the disability",
+  "short_name": "empowerAbility",
+  "description": "Creating dignified and fulfilling lives for youth with disabilities in Ghana through opportunities in food systems, agriculture, ICT, and climate action.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9333ea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/lovable-uploads/cf02bc85-74d5-4792-aba1-0f1d374af068.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/cf02bc85-74d5-4792-aba1-0f1d374af068.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["social", "education", "nonprofit"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
