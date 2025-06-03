@@ -31,9 +31,9 @@ const TeamSection = () => {
     },
     { 
       name: 'Cece Abotsi', 
-      position: 'Head of Policy, Influence, and Advocacy/abilityHEALTH Lead', 
+      position: 'Head of Policy Influencing and Advocacy/abilityHEALTH Lead', 
       firstName: 'cece',
-      image: '/lovable-uploads/'
+      image: '/lovable-uploads/CeCe_PiA.png'
     },
     { 
       name: 'Michael Kumordzi Tetteh', 
