@@ -12,17 +12,17 @@ const Donate = () => {
       icon: <CreditCard className="h-8 w-8" />,
       title: "Bank Transfer",
       details: [
-        "Bank: Cal Bank",
-        "Account Name: empowerAbility Org",
-        "Account Number: 1234567890",
-        "Branch: Accra Main"
+        "Bank: ",
+        "Account Name: ",
+        "Account Number: ",
+        "Branch: "
       ]
     },
     {
       icon: <Smartphone className="h-8 w-8" />,
       title: "Mobile Money",
       details: [
-        "MTN Mobile Money: +233 50 292 4450",
+        "MTN Mobile Money: +233 54 326 2211",
         "Vodafone Cash: +233 20 811 8539",
         "AirtelTigo Money: Available on request"
       ]
@@ -31,8 +31,8 @@ const Donate = () => {
       icon: <Building className="h-8 w-8" />,
       title: "International Transfer",
       details: [
-        "Swift Code: GHCBGHAC",
-        "Bank Address: High Street, Accra",
+        "Swift Code: ",
+        "Bank Address: ",
         "For international donors"
       ]
     }
@@ -42,17 +42,17 @@ const Donate = () => {
     {
       title: "Agricultural Training",
       description: "Providing hands-on farming skills and sustainable agriculture techniques",
-      amount: "GHS 200 - Trains 1 youth for 3 months"
+      amount: "GHS 300 - Trains 1 youth for 3 months"
     },
     {
       title: "ICT Education",
       description: "Digital literacy and technology skills development programs",
-      amount: "GHS 150 - Provides ICT training for 1 youth"
+      amount: "GHS 300 - Provides ICT training for 1 youth"
     },
     {
       title: "Climate Action Projects",
       description: "Environmental conservation and climate resilience initiatives",
-      amount: "GHS 300 - Supports 1 climate project"
+      amount: "GHS 200 - Supports 1 climate project"
     },
     {
       title: "General Support",

@@ -89,7 +89,7 @@ const Footer = () => {
               </div>
               <div className="flex space-x-4 mt-4">
                 <a 
-                  href="https://facebook.com/enabledability" 
+                  href="https://www.facebook.com/empowerabilityOrg" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-orange-400 transition-colors"
