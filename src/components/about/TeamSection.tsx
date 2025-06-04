@@ -23,6 +23,12 @@ const TeamSection = () => {
       firstName: 'agede',
       image: '/lovable-uploads/Agede 2.png'
     },
+    {
+       name: 'Joana Eliza Kofie', 
+      position: 'Non-Executive Director/UK Representative', 
+      firstName: 'eliza',
+      image: '/lovable-uploads/Eliza_ED2.png'
+    },
     { 
       name: 'Stanley Anku', 
       position: 'Business Development', 
@@ -46,6 +52,12 @@ const TeamSection = () => {
       position: 'Head of Research, Monitoring and Evaluation', 
       firstName: 'caesar',
       image: '/lovable-uploads/Caesar 2.png'
+    },
+    { 
+      name: 'Matthew Cornan (USAID)', 
+      position: 'Impact and Investor Relations Manager', 
+      firstName: 'matthew',
+      image: '/lovable-uploads/'
     }
   ];
 

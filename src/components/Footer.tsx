@@ -14,6 +14,7 @@ const Footer = () => {
   const partners = [
     { name: 'Ghana Federation of Disability Organisations (GFD)', logo: '/lovable-uploads/08758381-66c8-4b31-9958-535e6aa19235.png' },
     { name: 'Sacrefilms Multimedia', logo: '/lovable-uploads/ea56cb5b-edbf-4c79-884c-8084621f19eb.png' },
+    { name: 'PrimeLinQ', logo: '/lovable-uploads/ProfilePic.png' },
     { name: 'UNPRPD', logo: null },
     { name: 'UNFPA', logo: null },
     { name: 'UNDP', logo: null },
@@ -21,7 +22,7 @@ const Footer = () => {
     { name: 'NCPD', logo: null },
     { name: 'Ministry of Gender and Protection Agency', logo: null },
     { name: 'TechSoup', logo: null },
-    { name: 'Master Card Foundation', logo: null },
+    { name: 'Master Card Foundation', logo: '/lovable-uploads/Mastercard Foundation.jpeg' },
     { name: 'thenovus.solutions', logo: null }
   ];
 

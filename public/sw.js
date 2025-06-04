@@ -5,7 +5,7 @@ const urlsToCache = [
   '/static/js/bundle.js',
   '/static/css/main.css',
   '/manifest.json',
-  '/lovable-uploads/cf02bc85-74d5-4792-aba1-0f1d374af068.png'
+  '/lovable-uploads/empowerAbility_icon favicon.png'
 ];
 
 // Install event - cache resources
