@@ -191,7 +191,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6 text-purple-300">Our Commitment to the UN Sustainable Development Goals</h4>
             <div className="bg-white p-6 rounded-xl shadow-lg inline-block">
               <img 
-                src="/lovable-uploads/c5a9f6e4-736c-4b4a-9d58-e1b2ea5bd923.png"
+                src="/lovable-uploads/SDGs_Logo.png"
                 alt="UN Sustainable Development Goals - No Poverty, Zero Hunger, Good Health and Well-being"
                 className="mx-auto max-w-full h-auto max-h-24 object-contain filter drop-shadow-sm"
               />
