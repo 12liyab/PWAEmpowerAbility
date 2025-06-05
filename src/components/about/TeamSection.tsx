@@ -57,7 +57,7 @@ const TeamSection = () => {
       name: 'Matthew Cornan', 
       position: 'Impact and Investor Relations Manager', 
       firstName: 'matthew',
-      image: '/lovable-uploads/'
+      image: '/lovable-uploads/Matthew_IIRM.png'
     }
   ];
 
