@@ -54,7 +54,7 @@ const TeamSection = () => {
       image: '/lovable-uploads/Caesar 2.png'
     },
     { 
-      name: 'Matthew Cornan (USAID)', 
+      name: 'Matthew Cornan', 
       position: 'Impact and Investor Relations Manager', 
       firstName: 'matthew',
       image: '/lovable-uploads/'
