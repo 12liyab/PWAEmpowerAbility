@@ -57,7 +57,7 @@ const Footer = () => {
             </p>
             <div className="space-y-2 text-sm">
               <p>📍 61 Avenue D West Road, North Legon, Accra</p>
-              <p>📞 +233 50 292 4450 | +233 20 811 8539</p>
+              <p>📞 +233 54 326 2211 | +233 20 811 8539</p>
               <p>✉️ info@enabledability.org</p>
             </div>
           </div>
