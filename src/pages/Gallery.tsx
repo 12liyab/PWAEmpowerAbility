@@ -43,17 +43,17 @@ const Gallery = () => {
 
   const videos = [
     {
-      id: "dQw4w9WgXcQ",
+      id: "bsq44Jg6CrM?si=X5GiGOrCZGi-e_qn",
       title: "empowerAbility Org Introduction",
       description: "Learn about our mission and impact"
     },
     {
-      id: "jNQXAC9IVRw",
+      id: "SGDg0QBW3Mk?si=u24qI7SqoEXPxAgO",
       title: "Agricultural Training Program",
       description: "See our youth in action in agriculture"
     },
     {
-      id: "9bZkp7q19f0",
+      id: "MY-TIMVpRj4?si=I3VKuMkCJYoT2N48",
       title: "ICT Skills Development",
       description: "Technology training for youth with disabilities"
     }

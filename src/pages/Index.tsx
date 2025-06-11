@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProductsSection from "@/components/ProductsSection";
@@ -7,6 +6,7 @@ import ChatBot from "@/components/ChatBot";
 import CookieConsent from "@/components/CookieConsent";
 import FloatingAccessibilityWidget from "@/components/FloatingAccessibilityWidget";
 import PWAInstallPrompt from "@/components/PWAInstallPrompt";
+import SurveyPopup from "@/components/SurveyPopup";
 
 const Index = () => {
   return (
@@ -19,6 +19,7 @@ const Index = () => {
       <ChatBot />
       <CookieConsent />
       <FloatingAccessibilityWidget />
+      <SurveyPopup />
     </div>
   );
 };

@@ -43,7 +43,7 @@ const TeamSection = () => {
     },
     { 
       name: 'Michael Kumordzi Tetteh', 
-      position: 'Head of Programs & Communications', 
+      position: 'Digital Media & Communications Manager', 
       firstName: 'michael',
       image: '/lovable-uploads/Michael 2.png'
     },

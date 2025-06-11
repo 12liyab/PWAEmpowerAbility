@@ -147,7 +147,7 @@ const Contact = () => {
                 <CardContent className="space-y-4">
                   <div>
                     <p className="text-gray-700">Phone:</p>
-                    <p className="text-blue-600">+233 50 292 4450</p>
+                    <p className="text-blue-600">+233 54 326 2211</p>
                     <p className="text-blue-600">+233 20 811 8539</p>
                   </div>
                   <div>

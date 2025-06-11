@@ -152,7 +152,7 @@ const Donate = () => {
                   <strong>Email:</strong> info@enabledability.org
                 </p>
                 <p>
-                  <strong>Phone:</strong> +233 50 292 4450 | +233 20 811 8539
+                  <strong>Phone:</strong> +233 54 326 2211 | +233 20 811 8539
                 </p>
                 <p>
                   <strong>Address:</strong> 61 Avenue D West Road, North Legon, Accra
