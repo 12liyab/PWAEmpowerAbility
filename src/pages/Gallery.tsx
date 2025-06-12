@@ -35,9 +35,9 @@ const Gallery = () => {
       title: "Community Outreach"
     },
     {
-      src: "/lovable-uploads/c7bf5932-3fc8-43fb-a749-cbc7c430b8d4.png",
+      src: "/lovable-uploads/TakeTheSurvey_creative2.jpg",
       alt: "Skill development workshop",
-      title: "Skills Workshop"
+      title: "Take the Survey Workshop"
     }
   ];
 
