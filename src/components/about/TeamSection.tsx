@@ -13,7 +13,7 @@ const TeamSection = () => {
   const teamMembers: TeamMember[] = [
     { 
       name: 'Joseph Lawrence Hammond', 
-      position: 'Executive Director', 
+      position: 'Executive Director/Head of Inovation and DX', 
       firstName: 'joseph',
       image: '/lovable-uploads/Jolah.png'
     },
@@ -31,7 +31,7 @@ const TeamSection = () => {
     },
     { 
       name: 'Stanley Anku', 
-      position: 'Business Development', 
+      position: 'Head of Blockchain Business Development', 
       firstName: 'stanley',
       image: '/lovable-uploads/Stanley 2.png'
     },

@@ -115,7 +115,7 @@ const Accessibility = () => {
                   </p>
                   <div className="space-y-2 text-sm">
                     <p>📧 accessibility@enabledability.org</p>
-                    <p>📞 +233 50 292 4450</p>
+                    <p>📞 +233 54 326 2211</p>
                     <p>📍 61 Avenue D West Road, North Legon, Accra</p>
                   </div>
                   <p className="text-gray-600 text-sm mt-4">

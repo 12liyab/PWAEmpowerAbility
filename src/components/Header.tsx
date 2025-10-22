@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -28,8 +27,9 @@ const Header = () => {
           <nav className="hidden lg:flex space-x-8">
             <Link to="/" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Home</Link>
             <Link to="/about" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">About</Link>
-            <Link to="/products" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Our Products</Link>
             <Link to="/programs" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Programs</Link>
+            <Link to="/products" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Our Products</Link>
+            <Link to="/support" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Support</Link>
             <Link to="/gallery" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Media</Link>
             <Link to="/contact" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Contact</Link>
           </nav>
@@ -70,6 +70,13 @@ const Header = () => {
                 About
               </Link>
               <Link 
+                to="/programs" 
+                className="block py-2 text-gray-700 hover:text-purple-600 transition-colors font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Programs
+              </Link>
+              <Link 
                 to="/products" 
                 className="block py-2 text-gray-700 hover:text-purple-600 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
@@ -77,11 +84,11 @@ const Header = () => {
                 Our Products
               </Link>
               <Link 
-                to="/programs" 
+                to="/support" 
                 className="block py-2 text-gray-700 hover:text-purple-600 transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Programs
+                Support
               </Link>
               <Link 
                 to="/gallery" 

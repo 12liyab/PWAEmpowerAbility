@@ -153,7 +153,7 @@ const Programs = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">💻</span>
                 </div>
-                <CardTitle className="text-xl font-bold text-purple-600">Innovation ICT & AI Technology</CardTitle>
+                <CardTitle className="text-xl font-bold text-purple-600">Innovation & AI Technology</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <ul className="text-sm text-gray-600 space-y-2">

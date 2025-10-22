@@ -15,7 +15,7 @@ const TermsConditions = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">Terms and Conditions</h1>
             <p className="text-gray-600 text-center mb-12">
-              Last updated: December 2024
+              Last updated: May 2025
             </p>
 
             <div className="space-y-8">
@@ -154,7 +154,7 @@ const TermsConditions = () => {
                   </p>
                   <div className="space-y-2 text-sm">
                     <p>📧 info@enabledability.org</p>
-                    <p>📞 +233 50 292 4450 | +233 20 811 8539</p>
+                    <p>📞 +233 54 326 2211 | +233 20 811 8539</p>
                     <p>📍 61 Avenue D West Road, North Legon, Accra</p>
                   </div>
                 </CardContent>
