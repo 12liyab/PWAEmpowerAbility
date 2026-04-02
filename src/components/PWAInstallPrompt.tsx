@@ -69,13 +69,13 @@ const PWAInstallPrompt = () => {
   }
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-purple-600 text-white p-4 z-50 shadow-lg">
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-4">
-          <Download className="h-5 w-5" />
+    <div className="fixed top-0 left-0 right-0 bg-purple-600 text-white p-3 sm:p-4 z-50 shadow-lg">
+      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0">
+        <div className="flex items-center space-x-3 sm:space-x-4">
+          <Download className="h-5 w-5 flex-shrink-0" />
           <div>
-            <p className="font-semibold">Install empowerAbility App</p>
-            <p className="text-sm text-purple-100">Add to your home screen for quick access</p>
+            <p className="font-semibold text-sm sm:text-base">Install empowerAbility App</p>
+            <p className="text-xs sm:text-sm text-purple-100">Add to your home screen for quick access</p>
           </div>
         </div>
         <div className="flex items-center space-x-2">

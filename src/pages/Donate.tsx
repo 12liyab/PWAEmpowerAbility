@@ -67,14 +67,14 @@ const Donate = () => {
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-purple-600 to-orange-500 text-white py-16">
+        <section className="bg-gradient-to-br from-purple-600 to-orange-500 text-white py-10 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <Heart className="h-16 w-16 mx-auto mb-6 text-orange-200" />
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <Heart className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-4 md:mb-6 text-orange-200" />
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
                 Support Our Mission
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-purple-100">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-purple-100">
                 Your donation helps create dignified and fulfilling lives for youth with disabilities in Ghana
               </p>
             </div>
@@ -82,13 +82,13 @@ const Donate = () => {
         </section>
 
         {/* Impact Section */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-10 md:py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+              <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 md:mb-12 text-gray-900">
                 Where Your Donation Goes
               </h2>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid sm:grid-cols-2 gap-5 md:gap-8">
                 {impactAreas.map((area, index) => (
                   <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <h3 className="text-xl font-semibold mb-3 text-purple-600">
@@ -108,13 +108,13 @@ const Donate = () => {
         </section>
 
         {/* Donation Methods */}
-        <section className="py-16">
+        <section className="py-10 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+              <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 md:mb-12 text-gray-900">
                 How to Donate
               </h2>
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
                 {donationMethods.map((method, index) => (
                   <div key={index} className="bg-white p-6 rounded-lg shadow-md border-2 border-gray-100 hover:border-purple-200 transition-colors">
                     <div className="text-purple-600 mb-4">
@@ -138,16 +138,16 @@ const Donate = () => {
         </section>
 
         {/* Contact Information */}
-        <section className="py-16 bg-purple-50">
+        <section className="py-10 md:py-16 bg-purple-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-8 text-gray-900">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6 md:mb-8 text-gray-900">
                 Need Help with Your Donation?
               </h2>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8">
                 Our team is here to assist you with any questions about donating or to provide receipts for tax purposes.
               </p>
-              <div className="space-y-4 text-lg">
+              <div className="space-y-3 md:space-y-4 text-base md:text-lg">
                 <p>
                   <strong>Email:</strong> info@enabledability.org
                 </p>
@@ -169,13 +169,13 @@ const Donate = () => {
         </section>
 
         {/* Thank You Section */}
-        <section className="py-16 bg-gradient-to-r from-purple-600 to-orange-500 text-white">
+        <section className="py-10 md:py-16 bg-gradient-to-r from-purple-600 to-orange-500 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 md:mb-6">
                 Thank You for Your Support
               </h2>
-              <p className="text-xl text-purple-100">
+              <p className="text-base sm:text-lg md:text-xl text-purple-100">
                 Every donation, no matter the size, makes a meaningful difference in the lives of youth with disabilities in Ghana. Together, we're building a more inclusive and empowered future.
               </p>
             </div>

@@ -4,14 +4,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const ChallengeSection = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-12 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
             The Challenge We Address
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-5 md:gap-8 mb-8 md:mb-12">
             <Card>
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-red-600">Youth Unemployment in Africa</CardTitle>
@@ -51,9 +51,9 @@ const ChallengeSection = () => {
             </Card>
           </div>
 
-          <div className="bg-white rounded-lg p-8 shadow-md">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Barriers Faced by Youth with Disabilities</h3>
-            <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white rounded-lg p-5 md:p-8 shadow-md">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Barriers Faced by Youth with Disabilities</h3>
+            <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2"></span>

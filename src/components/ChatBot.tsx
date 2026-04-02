@@ -127,7 +127,7 @@ const ChatBot = () => {
       {/* Chat Button with Animation */}
       <Button
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-6 h-14 w-14 rounded-full bg-purple-600 hover:bg-purple-700 shadow-lg z-50 transition-all duration-300 hover:scale-110 ${isOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'} flex items-center justify-center animate-pulse`}
+        className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 h-12 w-12 sm:h-14 sm:w-14 rounded-full bg-purple-600 hover:bg-purple-700 shadow-lg z-50 transition-all duration-300 hover:scale-110 ${isOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'} flex items-center justify-center animate-pulse`}
         aria-label="Open chat"
       >
         <MessageCircle className="h-6 w-6 text-white" />
@@ -135,7 +135,7 @@ const ChatBot = () => {
 
       {/* Enhanced Chat Window with Better Layout */}
       {isOpen && (
-        <Card className="fixed bottom-6 right-6 w-80 h-[500px] shadow-xl z-50 flex flex-col animate-scale-in">
+        <Card className="fixed bottom-4 right-4 left-4 sm:left-auto sm:right-6 sm:bottom-6 sm:w-80 h-[min(500px,85vh)] shadow-xl z-50 flex flex-col animate-scale-in">
           <CardHeader className="bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-t-lg flex-shrink-0">
             <div className="flex justify-between items-center">
               <div className="flex items-center space-x-2">

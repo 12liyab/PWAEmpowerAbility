@@ -12,27 +12,27 @@ const Products = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-green-50">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-blue-50 to-green-50">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Our <span className="text-blue-600">Products</span> & <span className="text-green-600">Services</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6">
+             <span className="text-blue-600">Products</span> & <span className="text-green-600">Services</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
             Comprehensive solutions designed to empower youth with disabilities across multiple sectors
           </p>
         </div>
       </section>
 
       {/* abilityMARKET */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <div className="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-white font-bold text-2xl">M</span>
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-blue-500 rounded-lg flex items-center justify-center mb-4 md:mb-6">
+                <span className="text-white font-bold text-xl md:text-2xl">M</span>
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">abilityMARKET</h2>
-              <p className="text-lg text-blue-600 mb-6 italic">"Empowering Inclusion, Access, and Opportunity"</p>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">abilityMARKET</h2>
+              <p className="text-base md:text-lg text-blue-600 mb-4 md:mb-6 italic">"Empowering Inclusion, Access, and Opportunity"</p>
               <p className="text-gray-600 mb-6">
                 A comprehensive online marketplace that connects people with disabilities to resources, 
                 products, and services while promoting independence, accessibility, and inclusivity.
@@ -68,7 +68,7 @@ const Products = () => {
               <img 
                 src="/lovable-uploads/0eca6f8f-189c-4fe0-b5ef-e81c706fc99d.png"
                 alt="Woman with vegetables representing marketplace and economic empowerment"
-                className="rounded-lg shadow-lg w-full h-96 object-cover"
+                className="rounded-lg shadow-lg w-full h-64 md:h-96 object-cover"
               />
             </div>
           </div>
@@ -76,22 +76,22 @@ const Products = () => {
       </section>
 
       {/* abilityFARMTECH */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <img 
                 src="/lovable-uploads/6a693b96-6a85-479a-aff8-b926bf48c6bc.png"
                 alt="Farmer with tractor representing agricultural technology"
-                className="rounded-lg shadow-lg w-full h-96 object-cover"
+                className="rounded-lg shadow-lg w-full h-64 md:h-96 object-cover"
               />
             </div>
             <div>
-              <div className="w-16 h-16 bg-green-500 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-white font-bold text-2xl">F</span>
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-green-500 rounded-lg flex items-center justify-center mb-4 md:mb-6">
+                <span className="text-white font-bold text-xl md:text-2xl">F</span>
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">abilityFARMTECH</h2>
-              <p className="text-lg text-green-600 mb-6 italic">"Technology-Driven Agriculture"</p>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">abilityFARMTECH</h2>
+              <p className="text-base md:text-lg text-green-600 mb-4 md:mb-6 italic">"Technology-Driven Agriculture"</p>
               <p className="text-gray-600 mb-6">
                 Empowering small landholder farmers, including youth with disabilities, to improve 
                 agricultural productivity, income, and overall well-being through technology and innovation.
@@ -128,15 +128,15 @@ const Products = () => {
       </section>
 
       {/* abilityVOICE */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <div className="w-16 h-16 bg-purple-500 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-white font-bold text-2xl">V</span>
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-purple-500 rounded-lg flex items-center justify-center mb-4 md:mb-6">
+                <span className="text-white font-bold text-xl md:text-2xl">V</span>
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">abilityVOICE</h2>
-              <p className="text-lg text-purple-600 mb-6 italic">"Amplifying the Voices of Ability"</p>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">abilityVOICE</h2>
+              <p className="text-base md:text-lg text-purple-600 mb-4 md:mb-6 italic">"Amplifying the Voices of Ability"</p>
               <p className="text-gray-600 mb-6">
                 A platform that empowers people with disabilities to share their stories, access resources, 
                 and connect with a supportive community while promoting inclusivity and challenging stereotypes.
@@ -172,7 +172,7 @@ const Products = () => {
               <img 
                 src="/lovable-uploads/9feece13-da05-4484-bd16-7ca495d87879.png"
                 alt="Person in wheelchair representing voice and empowerment"
-                className="rounded-lg shadow-lg w-full h-96 object-cover"
+                className="rounded-lg shadow-lg w-full h-64 md:h-96 object-cover"
               />
             </div>
           </div>
@@ -180,9 +180,9 @@ const Products = () => {
       </section>
 
       {/* abilityHEALTH & abilityEDU */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-5 md:gap-8">
             {/* abilityHEALTH Card */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-48 overflow-hidden">

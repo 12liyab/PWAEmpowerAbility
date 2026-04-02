@@ -4,6 +4,13 @@ import Footer from '@/components/Footer';
 import ChatBot from '@/components/ChatBot';
 import FloatingAccessibilityWidget from '@/components/FloatingAccessibilityWidget';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const Programs = () => {
   return (
@@ -11,21 +18,71 @@ const Programs = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-orange-50">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-green-50 to-orange-50">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Programs & <span className="text-green-600">Training</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6">
+            Programs & <span className="text-green-600">Projects</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
             Comprehensive programs addressing the core challenges faced by youth with disabilities
           </p>
         </div>
       </section>
 
-      {/* Main Focus Areas */}
-      <section className="py-20 bg-white">
+      {/* Youth Policy Dialogue Program */}
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                EVENT
+              </h2>
+              <p className="text-base md:text-lg text-gray-600">
+                Ghana's Inclusive Future: Empowering PWDs in Agribusiness, Technology and Health
+              </p>
+            </div>
+
+            <Carousel className="w-full max-w-4xl mx-auto">
+              <CarouselContent>
+                <CarouselItem>
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div>
+                      <img
+                        src="/lovable-uploads/empowerAbilityOrg_LaunchBanner.png"
+                        alt="empowerAbility Org Launch Banner - Program Activities"
+                        className="w-full h-64 md:h-80 object-cover rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
+                      />
+                    </div>
+                    <div className="space-y-6">
+                      <h3 className="text-2xl font-bold text-gray-900">Program Activities:</h3>
+                      <ul className="space-y-3 text-gray-600">
+                        <li className="flex items-start space-x-3">
+                          <span className="w-2 h-2 bg-green-500 rounded-full mt-2"></span>
+                          <span><strong>Launch empowerAbility Org:</strong> To formally introduce our mission, board, and 2026-2030 strategic roadmap.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <span className="w-2 h-2 bg-green-500 rounded-full mt-2"></span>
+                          <span><strong>Policy Dialogue:</strong> To facilitate a high-level conversation between PWD youth leaders, policymakers (National Council on Person with disability, MoFA, etc.), and industry heads.</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <span className="w-2 h-2 bg-green-500 rounded-full mt-2"></span>
+                          <span><strong>Sector Focus:</strong> To identify specific barriers and digital/technical solutions for PWDs in Agribusiness, FinTech/Software, and Healthcare.</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 md:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
             
             {/* Agriculture Program */}
             <Card className="h-full">
@@ -138,16 +195,16 @@ const Programs = () => {
       </section>
 
       {/* Enabling Factors */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Enabling Factors</h2>
-            <p className="text-xl text-gray-600">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Enabling Factors</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
               Leveraging technology, safeguarding, and policy engagement for sustainable impact
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
             <Card className="text-center">
               <CardHeader>
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -198,57 +255,6 @@ const Programs = () => {
                 </ul>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Youth Policy Dialogue Program */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Youth Policy Dialogue on Climate Change for PWDs
-              </h2>
-              <p className="text-lg text-gray-600">
-                Empowering young persons with disabilities to take leadership roles in climate policy dialogue
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <img 
-                  src="/lovable-uploads/cee1dca5-925d-4b21-9e2f-a4a99f9869f3.png"
-                  alt="Woman working in agricultural field representing climate resilience"
-                  className="rounded-lg shadow-lg w-full h-64 object-cover"
-                />
-              </div>
-              <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-gray-900">Program Activities:</h3>
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2"></span>
-                    <span>Raise awareness about climate change impacts on persons with disabilities</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2"></span>
-                    <span>Provide platform for sharing experiences and concerns</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2"></span>
-                    <span>Discuss accessible climate solutions and innovative technologies</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2"></span>
-                    <span>Encourage inclusive policy-making processes</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2"></span>
-                    <span>Foster collaboration among young leaders with disabilities</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </section>

@@ -1,13 +1,97 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ChatBot from "@/components/ChatBot";
 import FloatingAccessibilityWidget from "@/components/FloatingAccessibilityWidget";
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Download, FileText } from 'lucide-react';
+import { Download, FileText, X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
 
 const Gallery = () => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [lightboxImages, setLightboxImages] = useState<{ src: string; alt: string; title: string }[]>([]);
+
+  const openLightbox = (images: { src: string; alt: string; title: string }[], index: number) => {
+    setLightboxImages(images);
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => setLightboxOpen(false);
+  const prevImage = () => setLightboxIndex((prev) => (prev - 1 + lightboxImages.length) % lightboxImages.length);
+  const nextImage = () => setLightboxIndex((prev) => (prev + 1) % lightboxImages.length);
+
+  const campaigns = [
+    {
+      src: "/lovable-uploads/campaign 3.jpeg",
+      alt: "World Hearing Day - From communities to classrooms: hearing care for all children",
+      title: "World Hearing Day 2026",
+      context: "🤟✨ From Communities to Classrooms... to Careers.\n\nThis #WorldHearingDay, empowerAbility Org is visualizing the journey of inclusion. When we invest in hearing care and inclusive education for all children today, we are building the economic leaders of Ghana's future.\n\nWe are making this vision a reality on Tuesday, 24th March - #StayTuned!!\n\nLearn more about our mission 👉🏽 bit.ly/empowerAbilityOrg\n\n#empowerAbility #WHD2026 #GhanaInclusiveFuture #HearingCare #AccessibilityNow"
+    },
+    {
+      src: "/lovable-uploads/campaign 2.jpeg",
+      alt: "Accessible farming - Did you know farming is now 100% accessible?",
+      title: "Accessible Agriculture Campaign",
+      context: "Did you know that 80% of Ghana's agricultural production comes from smallholder farmers? At empowerAbility Org, we believe youth with disabilities are the missing link to modernizing this sector. Join us on March 24th to find out how. 🥳\n\n#empowerAbility2026 #enabledAbility #InclusiveFutureGH #AgTech"
+    },
+    {
+      src: "/lovable-uploads/campaign 1.jpeg",
+      alt: "Nothing About Us Without Us - Big news coming March 24",
+      title: "Nothing About Us Without Us",
+      context: "\"Nothing About Us Without Us.\" ✊✨\n\nAt empowerAbility Org, we believe representation isn't just a goal—it's the standard.\n\nWe have some big news dropping on March 24.\n\nStay tuned! 🧵👇\n\n#empowerAbility2026 #InclusiveFutureGH #Inclusion #Accessibility"
+    },
+    {
+      src: "/lovable-uploads/campaign 4.jpeg",
+      alt: "Ghana Independence Day - Empowering PWDs is a national priority",
+      title: "Ghana at 69 - Independence Day",
+      context: "Happy 69th Independence Day, Ghana! 🇬🇭✨\n\nAs we reflect on our journey since 1957, we recognize that our work isn't finished until every citizen is included. True independence is only possible when every youth, regardless of ability, has a seat at the table and a voice in our future.\n\nOn Tuesday, March 24th, we are setting that table at the British Council, Accra.\n\nFor more info. & support, call: +233 54 326 2211\n\n#GhanaAt69 #InclusionMatters #empowerAbilityOrg #InclusiveFutureGH #IndependenceDay"
+    }
+  ];
+
+  const eventPhotos = [
+    {
+      src: "/lovable-uploads/DSC04706.jpg",
+      alt: "Official Launch & Inclusive Youth Policy Dialogue - Keynote address at British Council, Accra",
+      title: "Keynote Address"
+    },
+    {
+      src: "/lovable-uploads/DSC04713.jpg",
+      alt: "Speaker presenting at the Official Launch & Inclusive Youth Policy Dialogue",
+      title: "Guest Speaker Presentation"
+    },
+    {
+      src: "/lovable-uploads/DSC04755.jpg",
+      alt: "Attendee registration at the Official Launch event",
+      title: "Event Registration"
+    },
+    {
+      src: "/lovable-uploads/DSC04796.jpg",
+      alt: "International guests attending the Inclusive Youth Policy Dialogue",
+      title: "International Partners"
+    },
+    {
+      src: "/lovable-uploads/DSC04819.jpg",
+      alt: "Volunteers and attendees networking at the event registration desk",
+      title: "Community Networking"
+    },
+    {
+      src: "/lovable-uploads/DSC04833.jpg",
+      alt: "empowerAbility Org volunteers assisting guests at the British Council event",
+      title: "Volunteer Team in Action"
+    },
+    {
+      src: "/lovable-uploads/DSC04876.jpg",
+      alt: "Distinguished guest delivering remarks at the Official Launch",
+      title: "Distinguished Remarks"
+    },
+    {
+      src: "/lovable-uploads/DSC04923.jpg",
+      alt: "Speaker from Ashesi University at the Inclusive Youth Policy Dialogue",
+      title: "Ashesi University Speaker"
+    }
+  ];
+
   const images = [
     {
       src: "/lovable-uploads/251653fa-c152-49a5-80ed-fb1653d427b9.png",
@@ -15,9 +99,9 @@ const Gallery = () => {
       title: "Agricultural Training Program"
     },
     {
-      src: "/lovable-uploads/56bdeb80-c403-405b-934f-4617baee1a40.png",
-      alt: "ICT training session",
-      title: "ICT Skills Development"
+      src: "/lovable-uploads/Adobe Express JPFA.png",
+      alt: "Japan Plant Factory Association",
+      title: "Japan Plant Factory Association"
     },
     {
       src: "/lovable-uploads/6a693b96-6a85-479a-aff8-b926bf48c6bc.png",
@@ -94,36 +178,42 @@ const Gallery = () => {
     <div className="min-h-screen">
       <Header />
       
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto px-4 py-8 md:py-12">
         {/* Hero Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our <span className="text-purple-600">Gallery</span>
+        <div className="text-center mb-8 md:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+             <span className="text-purple-600">Media</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Explore moments from our programs, see the impact we're making, and watch stories 
-            of transformation in the lives of youth with disabilities in Ghana.
+            of transformation in the lives of youth with disabilities in Ghana's Inclusive Future.
           </p>
         </div>
 
-        {/* Images Gallery */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Photo Gallery</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {images.map((image, index) => (
-              <Card key={index} className="overflow-hidden hover-lift">
+        {/* Campaigns Section */}
+        <section className="mb-12 md:mb-20">
+          <div className="text-center mb-8 md:mb-10">
+            <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+              Campaigns
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Awareness Campaigns</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">Our campaigns raising awareness for disability inclusion across Ghana</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 max-w-5xl mx-auto">
+            {campaigns.map((campaign, index) => (
+              <Card key={index} className="overflow-hidden hover-lift shadow-md rounded-xl border-0">
                 <CardContent className="p-0">
-                  <div className="relative group">
+                  <div className="aspect-[4/3] overflow-hidden">
                     <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                      src={campaign.src}
+                      alt={campaign.alt}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-end">
-                      <div className="p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h3 className="font-semibold text-lg">{image.title}</h3>
-                      </div>
-                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="font-bold text-xl text-gray-900 mb-3">{campaign.title}</h3>
+                    <p className="text-gray-600 text-sm whitespace-pre-line">{campaign.context}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -131,10 +221,93 @@ const Gallery = () => {
           </div>
         </section>
 
+        {/* Event Highlights - Bento Grid */}
+        <section className="mb-12 md:mb-20">
+          <div className="text-center mb-8 md:mb-10">
+            <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+              <Camera className="h-4 w-4" />
+              Event Highlights
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Official Launch & Inclusive Youth Policy Dialogue</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">British Council, Accra — March 24th, 2026</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 max-w-6xl mx-auto auto-rows-[140px] sm:auto-rows-[180px] md:auto-rows-[240px]">
+            {eventPhotos.map((photo, index) => {
+              const spanClass =
+                index === 0
+                  ? "col-span-2 row-span-2"
+                  : index === 3
+                  ? "col-span-2"
+                  : index === 5
+                  ? "col-span-2"
+                  : index === 7
+                  ? "col-span-2 row-span-2"
+                  : "";
+              return (
+                <div
+                  key={index}
+                  className={`relative group overflow-hidden rounded-2xl cursor-pointer ${spanClass}`}
+                  onClick={() => openLightbox(eventPhotos, index)}
+                >
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
+                    <div className="p-4 md:p-5">
+                      <h3 className="text-white font-semibold text-sm md:text-base drop-shadow-lg">{photo.title}</h3>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* Photo Gallery */}
+        <section className="mb-12 md:mb-20">
+          <div className="text-center mb-8 md:mb-10">
+            <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+              <Camera className="h-4 w-4" />
+              Programs & Initiatives
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Photo Gallery</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">Our programs in action across agriculture, climate, and community development</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 max-w-6xl mx-auto">
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className="relative group overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                onClick={() => openLightbox(images, index)}
+              >
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end">
+                  <div className="p-5 text-white">
+                    <h3 className="font-semibold text-base drop-shadow-lg">{image.title}</h3>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Videos Gallery */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Video Gallery</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <section className="mb-12 md:mb-20">
+          <div className="text-center mb-8 md:mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Video Gallery</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">Watch stories of transformation and impact</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-8">
             {videos.map((video, index) => (
               <Card key={index} className="overflow-hidden hover-lift">
                 <CardContent className="p-0">
@@ -159,9 +332,12 @@ const Gallery = () => {
         </section>
 
         {/* PDF Documents Gallery */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Resources & Documents</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="mb-12 md:mb-20">
+          <div className="text-center mb-8 md:mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">Resources & Documents</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">Download reports and publications on disability rights in Ghana</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {pdfs.map((pdf, index) => (
               <Card key={index} className="overflow-hidden hover-lift">
                 <CardContent className="p-6">
@@ -202,11 +378,11 @@ const Gallery = () => {
         </section>
 
         {/* Call to Action */}
-        <section className="mt-16 text-center bg-purple-50 rounded-xl p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <section className="mt-12 md:mt-16 text-center bg-purple-50 rounded-xl p-6 md:p-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Be Part of Our Story
           </h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
             Every photo and video represents a life transformed. Join us in creating more stories 
             of empowerment and inclusion for youth with disabilities.
           </p>
@@ -226,6 +402,52 @@ const Gallery = () => {
           </div>
         </section>
       </main>
+
+      {/* Lightbox Overlay */}
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
+          <button
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors z-50"
+            aria-label="Close lightbox"
+          >
+            <X className="h-8 w-8" />
+          </button>
+          <button
+            onClick={(e) => { e.stopPropagation(); prevImage(); }}
+            className="absolute left-4 text-white/80 hover:text-white transition-colors z-50"
+            aria-label="Previous image"
+          >
+            <ChevronLeft className="h-10 w-10" />
+          </button>
+          <button
+            onClick={(e) => { e.stopPropagation(); nextImage(); }}
+            className="absolute right-4 text-white/80 hover:text-white transition-colors z-50"
+            aria-label="Next image"
+          >
+            <ChevronRight className="h-10 w-10" />
+          </button>
+          <div
+            className="max-w-5xl max-h-[85vh] px-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={lightboxImages[lightboxIndex]?.src}
+              alt={lightboxImages[lightboxIndex]?.alt}
+              className="max-w-full max-h-[80vh] object-contain rounded-lg mx-auto"
+            />
+            <p className="text-white text-center mt-4 text-lg font-medium">
+              {lightboxImages[lightboxIndex]?.title}
+            </p>
+            <p className="text-white/50 text-center text-sm mt-1">
+              {lightboxIndex + 1} / {lightboxImages.length}
+            </p>
+          </div>
+        </div>
+      )}
 
       <Footer />
       <ChatBot />

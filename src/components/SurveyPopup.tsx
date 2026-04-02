@@ -47,7 +47,7 @@ const SurveyPopup = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="sm:max-w-lg border-0 bg-gradient-to-br from-purple-50 via-white to-orange-50 shadow-2xl animate-scale-in">
+      <DialogContent className="max-w-[calc(100vw-2rem)] sm:max-w-lg border-0 bg-gradient-to-br from-purple-50 via-white to-orange-50 shadow-2xl animate-scale-in">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-100/20 via-transparent to-orange-100/20 rounded-lg"></div>
         
         <DialogHeader className="relative z-10 text-center space-y-4">

@@ -110,16 +110,16 @@ const ProductsSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
+    <section className="py-12 md:py-20 bg-gradient-to-br from-purple-50 to-orange-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-purple-700 mb-4">Our Products & Services</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-700 mb-4">Products & Services</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive solutions designed to empower youth with disabilities across multiple sectors
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
           {products.map((product, index) => (
             <Card key={index} className="h-full hover:shadow-lg transition-shadow duration-300 border-purple-100 hover:border-purple-200">
               <CardHeader>

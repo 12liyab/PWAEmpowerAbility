@@ -15,15 +15,18 @@ const Footer = () => {
     { name: 'Ghana Federation of Disability Organisations (GFD)', logo: '/lovable-uploads/08758381-66c8-4b31-9958-535e6aa19235.png' },
     { name: 'Sacrefilms Multimedia', logo: '/lovable-uploads/ea56cb5b-edbf-4c79-884c-8084621f19eb.png' },
     { name: 'PrimeLinQ', logo: '/lovable-uploads/ProfilePic.png' },
-    { name: 'UNPRPD', logo: null },
-    { name: 'UNFPA', logo: null },
-    { name: 'UNDP', logo: null },
-    { name: 'FAO', logo: null },
-    { name: 'NCPD', logo: null },
-    { name: 'Ministry of Gender and Protection Agency', logo: null },
-    { name: 'TechSoup', logo: null },
-    { name: 'Master Card Foundation', logo: '/lovable-uploads/Mastercard Foundation.jpeg' },
-    { name: 'thenovus.solutions', logo: null }
+    { name: 'theprintpalace', logo: '/lovable-uploads/PrintPalaceFinalLogo.png' },
+    // { name: 'UNPRPD', logo: null },
+    // { name: 'UNFPA', logo: null },
+    // { name: 'UNDP', logo: null },
+    // { name: 'FAO', logo: null },
+    // { name: 'NCPD', logo: null },
+    // { name: 'National Council on Person with disability', logo: null },
+    // { name: 'TechSoup', logo: null },
+    // { name: 'Master Card Foundation', logo: '/lovable-uploads/Mastercard Foundation.jpeg' },
+    { name: 'thenovus.solutions', logo: '/lovable-uploads/2d28e705-1016-4814-9b9e-24c65d441968.png' },
+    { name: 'Japan Plant Factory Association', logo: '/lovable-uploads/Adobe Express JPFA.png' },
+    { name: 'National Council for Persons with Disabilities (NCPWD)', logo: '/lovable-uploads/NCPWD-2.png' }
   ];
 
   useEffect(() => {
@@ -40,10 +43,10 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {/* Organization Info */}
-          <div className="col-span-2">
+          <div className="sm:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
                 src="/lovable-uploads/7d84e363-74f6-4d65-a79a-1b167f536488.png"
@@ -67,7 +70,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-purple-300">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/about" className="text-gray-300 hover:text-orange-400 transition-colors">About Us</Link></li>
-              <li><Link to="/products" className="text-gray-300 hover:text-orange-400 transition-colors">Our Products</Link></li>
+              <li><Link to="/products" className="text-gray-300 hover:text-orange-400 transition-colors">Products</Link></li>
               <li><Link to="/programs" className="text-gray-300 hover:text-orange-400 transition-colors">Programs</Link></li>
               <li><Link to="/gallery" className="text-gray-300 hover:text-orange-400 transition-colors">Media</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-orange-400 transition-colors">Contact</Link></li>
@@ -149,11 +152,11 @@ const Footer = () => {
                 align: "start",
                 loop: true,
               }}
-              className="w-full max-w-6xl mx-auto"
+              className="w-full max-w-6xl mx-auto px-2"
             >
-              <CarouselContent>
+              <CarouselContent className="-ml-2">
                 {partners.map((partner, index) => (
-                  <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4 xl:basis-1/6">
+                  <CarouselItem key={index} className="pl-2 basis-1/2 sm:basis-1/3 md:basis-1/3 lg:basis-1/4 xl:basis-1/6">
                     <div className="group flex flex-col items-center space-y-2 p-4 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-lg animate-fade-in"
                          style={{ animationDelay: `${index * 0.1}s` }}>
                       {partner.logo ? (
@@ -193,7 +196,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/SDGs_Logo.png"
                 alt="UN Sustainable Development Goals - No Poverty, Zero Hunger, Good Health and Well-being"
-                className="mx-auto max-w-full h-auto max-h-24 object-contain filter drop-shadow-sm"
+                className="mx-auto max-w-full h-auto max-h-16 sm:max-h-24 object-contain filter drop-shadow-sm"
               />
             </div>
             <p className="text-gray-400 text-sm mt-6 max-w-3xl mx-auto leading-relaxed">

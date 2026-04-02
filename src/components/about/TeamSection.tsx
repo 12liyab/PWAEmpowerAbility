@@ -13,13 +13,13 @@ const TeamSection = () => {
   const teamMembers: TeamMember[] = [
     { 
       name: 'Joseph Lawrence Hammond', 
-      position: 'Executive Director/Head of Inovation and DX', 
+      position: 'Executive Director/Head of Inovation and Digital Inclusion', 
       firstName: 'joseph',
       image: '/lovable-uploads/Jolah.png'
     },
     { 
       name: 'Agede Mawuena', 
-      position: 'Deputy Executive Director/Operations', 
+      position: 'Deputy Executive Director/Operations Manager', 
       firstName: 'agede',
       image: '/lovable-uploads/Agede 2.png'
     },
@@ -31,7 +31,7 @@ const TeamSection = () => {
     },
     { 
       name: 'Stanley Anku', 
-      position: 'Head of Blockchain Business Development', 
+      position: 'Head of Fintech and Business Development', 
       firstName: 'stanley',
       image: '/lovable-uploads/Stanley 2.png'
     },
@@ -54,24 +54,24 @@ const TeamSection = () => {
       image: '/lovable-uploads/Caesar 2.png'
     },
     { 
-      name: 'Matthew Cornan', 
-      position: 'Impact and Investor Relations Manager', 
-      firstName: 'matthew',
-      image: '/lovable-uploads/Matthew_IIRM.png'
+      name: 'Wilhermina Dansoa Ametepeh', 
+      position: 'abilityVOICE Lead / Public Relations Officer (PRO)', 
+      firstName: 'wilhermina',
+      image: '/lovable-uploads/Mina_pic.jpg'
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 md:py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
-          <p className="text-xl text-gray-600">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600">
             Dedicated professionals working together to create meaningful change
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {teamMembers.map((member, index) => (
             <TeamMemberCard key={index} member={member} />
           ))}

@@ -145,15 +145,15 @@ const Support = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden">
+      <section className="relative py-12 md:py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-orange-500/10"></div>
         <div className="container mx-auto text-center relative z-10">
           <div className="animate-fade-in">
-            <Target className="h-16 w-16 mx-auto mb-6 text-purple-600 animate-bounce-in" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
+            <Target className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-4 md:mb-6 text-purple-600 animate-bounce-in" />
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
               Our Support Framework
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-delayed-fade-in">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto animate-delayed-fade-in">
               Discover how empowerAbility Org targets beyond the SDGs and the specific means by which we plan to achieve our transformative goals.
             </p>
           </div>
@@ -161,16 +161,16 @@ const Support = () => {
       </section>
 
       {/* Specific Targets Section */}
-      <section className="py-16 px-4">
+      <section className="py-10 md:py-16 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our  Targets</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">Targets</h2>
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               While our commitment to the SDGs is core to our mission, we have granular internal targets that guide our work.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {targets.map((target, index) => (
               <Card key={index} className="hover-lift hover:shadow-xl transition-all duration-300 animate-fade-in border-0 bg-white/80 backdrop-blur-sm" style={{animationDelay: `${index * 0.1}s`}}>
                 <CardHeader className="text-center pb-4">
@@ -191,19 +191,19 @@ const Support = () => {
       </section>
 
       {/* Means to Achieve Goals Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-purple-50 to-orange-50">
+      <section className="py-10 md:py-16 px-4 bg-gradient-to-r from-purple-50 to-orange-50">
         <div className="container mx-auto">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Means to Achieve Our Goals</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">Means to Achieve Our Goals</h2>
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               Our strategies for achieving these targets through a multi-faceted approach.
             </p>
           </div>
 
           {/* Investment & Funding */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-8 text-center text-purple-600 animate-fade-in">Investment & Funding</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="mb-12 md:mb-16">
+            <h3 className="text-xl sm:text-2xl font-bold mb-6 md:mb-8 text-center text-purple-600 animate-fade-in">Investment & Funding</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {fundingStrategies.map((strategy, index) => (
                 <Card key={index} className="hover-lift hover:shadow-xl transition-all duration-300 animate-slide-in-up border-0 bg-white/90 backdrop-blur-sm" style={{animationDelay: `${index * 0.1}s`}}>
                   <CardHeader className="text-center pb-4">
@@ -224,8 +224,8 @@ const Support = () => {
 
           {/* Partnerships & Collaborations */}
           <div>
-            <h3 className="text-2xl font-bold mb-8 text-center text-orange-600 animate-fade-in">Partnerships & Collaborations</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <h3 className="text-xl sm:text-2xl font-bold mb-6 md:mb-8 text-center text-orange-600 animate-fade-in">Partnerships & Collaborations</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {partnerships.map((partnership, index) => (
                 <Card key={index} className="hover-lift hover:shadow-xl transition-all duration-300 animate-slide-in-up border-0 bg-white/90 backdrop-blur-sm" style={{animationDelay: `${index * 0.1}s`}}>
                   <CardHeader className="text-center pb-4">
@@ -247,16 +247,16 @@ const Support = () => {
       </section>
 
       {/* Vehicles to Achieve Targets */}
-      <section className="py-16 px-4">
+      <section className="py-10 md:py-16 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Vehicles to Achieve Targets</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">Vehicles to Achieve Targets</h2>
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               The specific mechanisms and approaches we use to deliver on our commitments.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-16">
             {vehicles.map((vehicle, index) => (
               <Card key={index} className="hover-lift hover:shadow-xl transition-all duration-300 animate-fade-in border-0 bg-gradient-to-br from-white to-purple-50" style={{animationDelay: `${index * 0.1}s`}}>
                 <CardHeader className="text-center pb-4">
@@ -277,16 +277,16 @@ const Support = () => {
       </section>
 
       {/* Focus Areas */}
-      <section className="py-16 px-4 bg-gradient-to-r from-orange-50 to-purple-50">
+      <section className="py-10 md:py-16 px-4 bg-gradient-to-r from-orange-50 to-purple-50">
         <div className="container mx-auto">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our Focus Areas</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our Focus Areas</h2>
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               Comprehensive support across multiple domains to ensure holistic empowerment.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-8">
             {focusAreas.map((area, index) => (
               <Card key={index} className="hover-lift hover:shadow-xl transition-all duration-300 animate-slide-in-up border-0 bg-white/90 backdrop-blur-sm" style={{animationDelay: `${index * 0.15}s`}}>
                 <CardHeader>
@@ -314,16 +314,16 @@ const Support = () => {
       </section>
 
       {/* Specialized Programs Section */}
-      <section className="py-16 px-4">
+      <section className="py-10 md:py-16 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800"></h2>
-            <p className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800"></h2>
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-800">
               Innovative solutions for our communities.
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
             <Card className="hover-lift hover:shadow-xl transition-all duration-300 animate-slide-in-left border-0 bg-gradient-to-br from-purple-50 to-white">
               <CardHeader>
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white hover:animate-glow">

@@ -95,12 +95,12 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-green-50">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-blue-50 to-green-50">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6">
             Contact <span className="text-blue-600">Us</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Get in touch with empowerAbility Org. We're here to answer your questions and discuss how you can get involved.
           </p>
         </div>
@@ -115,7 +115,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
-                <p className="text-lg text-gray-600 mb-8">
+                <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8">
                   We'd love to hear from you. Send us a message and we'll respond as soon as possible.
                 </p>
               </div>
@@ -186,7 +186,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="firstName">First Name *</Label>
                         <Input 
@@ -270,16 +270,16 @@ const Contact = () => {
       </section>
 
       {/* Get Involved Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Get Involved</h2>
-            <p className="text-xl text-gray-600">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Get Involved</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
               There are many ways to support our mission and make a difference
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
             <Card className="text-center">
               <CardHeader>
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">

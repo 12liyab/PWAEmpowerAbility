@@ -28,7 +28,7 @@ const Header = () => {
             <Link to="/" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Home</Link>
             <Link to="/about" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">About</Link>
             <Link to="/programs" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Programs</Link>
-            <Link to="/products" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Our Products</Link>
+            <Link to="/products" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Products</Link>
             <Link to="/support" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Support</Link>
             <Link to="/gallery" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Media</Link>
             <Link to="/contact" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Contact</Link>
@@ -53,60 +53,60 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-purple-100">
-            <nav className="py-4 space-y-2">
+          <div className="lg:hidden border-t border-purple-100 bg-white">
+            <nav className="py-3 space-y-1">
               <Link 
                 to="/" 
-                className="block py-2 text-gray-700 hover:text-purple-600 transition-colors font-medium"
+                className="block px-2 py-3 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 to="/about" 
-                className="block py-2 text-gray-700 hover:text-purple-600 transition-colors font-medium"
+                className="block px-2 py-3 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
                 to="/programs" 
-                className="block py-2 text-gray-700 hover:text-purple-600 transition-colors font-medium"
+                className="block px-2 py-3 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Programs
               </Link>
               <Link 
                 to="/products" 
-                className="block py-2 text-gray-700 hover:text-purple-600 transition-colors font-medium"
+                className="block px-2 py-3 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Our Products
+                Products
               </Link>
               <Link 
                 to="/support" 
-                className="block py-2 text-gray-700 hover:text-purple-600 transition-colors font-medium"
+                className="block px-2 py-3 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Support
               </Link>
               <Link 
                 to="/gallery" 
-                className="block py-2 text-gray-700 hover:text-purple-600 transition-colors font-medium"
+                className="block px-2 py-3 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Media
               </Link>
               <Link 
                 to="/contact" 
-                className="block py-2 text-gray-700 hover:text-purple-600 transition-colors font-medium"
+                className="block px-2 py-3 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </Link>
               
               {/* Mobile Donate Button */}
-              <div className="pt-4">
+              <div className="pt-3 px-2">
                 <DonateButton />
               </div>
             </nav>
