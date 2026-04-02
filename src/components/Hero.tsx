@@ -51,12 +51,17 @@ const Hero = () => {
           </div>
 
           <div className="relative">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
+            <div className="grid grid-cols-2 gap-3">
+              <div className="space-y-3">
                 <img 
-                  src="/lovable-uploads/0eca6f8f-189c-4fe0-b5ef-e81c706fc99d.png"
-                  alt="Woman with vegetables representing agricultural empowerment"
-                  className="rounded-lg shadow-lg w-full h-36 sm:h-48 object-cover"
+                  src="/lovable-uploads/board 1.jpeg"
+                  alt="Accra Declaration on an Inclusive Future - signing ceremony"
+                  className="rounded-lg shadow-lg w-full h-32 sm:h-40 object-cover"
+                />
+                <img 
+                  src="/lovable-uploads/board 3.jpeg"
+                  alt="Official Launch and Inclusive Youth Policy Dialogue"
+                  className="rounded-lg shadow-lg w-full h-24 sm:h-32 object-cover"
                 />
                 <img 
                   src="/lovable-uploads/9feece13-da05-4484-bd16-7ca495d87879.png"
@@ -64,16 +69,16 @@ const Hero = () => {
                   className="rounded-lg shadow-lg w-full h-24 sm:h-32 object-cover"
                 />
               </div>
-              <div className="space-y-4 mt-8">
+              <div className="space-y-3 mt-6">
                 <img 
-                  src="/lovable-uploads/56bdeb80-c403-405b-934f-4617baee1a40.png"
-                  alt="Hands tending to plants representing care and growth"
-                  className="rounded-lg shadow-lg w-full h-24 sm:h-32 object-cover"
+                  src="/lovable-uploads/board 2.jpeg"
+                  alt="Accra Declaration on an Inclusive Future - group photo"
+                  className="rounded-lg shadow-lg w-full h-32 sm:h-40 object-cover"
                 />
                 <img 
                   src="/lovable-uploads/cee1dca5-925d-4b21-9e2f-a4a99f9869f3.png"
                   alt="Woman working in field representing agricultural empowerment"
-                  className="rounded-lg shadow-lg w-full h-36 sm:h-48 object-cover"
+                  className="rounded-lg shadow-lg w-full h-32 sm:h-40 object-cover"
                 />
               </div>
             </div>

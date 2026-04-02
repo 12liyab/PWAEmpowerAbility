@@ -71,11 +71,6 @@ const Gallery = () => {
       title: "International Partners"
     },
     {
-      src: "/lovable-uploads/DSC04819.jpg",
-      alt: "Volunteers and attendees networking at the event registration desk",
-      title: "Community Networking"
-    },
-    {
       src: "/lovable-uploads/DSC04833.jpg",
       alt: "empowerAbility Org volunteers assisting guests at the British Council event",
       title: "Volunteer Team in Action"
@@ -83,12 +78,77 @@ const Gallery = () => {
     {
       src: "/lovable-uploads/DSC04876.jpg",
       alt: "Distinguished guest delivering remarks at the Official Launch",
-      title: "Distinguished Remarks"
+      title: "Ashesi University Speaker" 
     },
     {
       src: "/lovable-uploads/DSC04923.jpg",
       alt: "Speaker from Ashesi University at the Inclusive Youth Policy Dialogue",
-      title: "Ashesi University Speaker"
+      title: "Distinguished Remarks"
+    },
+    {
+      src: "/lovable-uploads/board 1.jpeg",
+      alt: "Accra Declaration on an Inclusive Future - signing ceremony at British Council",
+      title: "Accra Declaration Signing"
+    },
+    {
+      src: "/lovable-uploads/board 2.jpeg",
+      alt: "Accra Declaration on an Inclusive Future - group signing ceremony",
+      title: "Declaration Group Signing"
+    },
+    {
+      src: "/lovable-uploads/board 3.jpeg",
+      alt: "Official Launch & Inclusive Youth Policy Dialogue - Executive Director at podium",
+      title: "Executive Director's Address"
+    },
+    {
+      src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.55 AM.jpeg",
+      alt: "Ashesi University speaker addressing the Official Launch & Inclusive Youth Policy Dialogue",
+      title: "Ashesi University Keynote"
+    },
+    {
+      src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.55 AM (1).jpeg",
+      alt: "Technology panel discussion - Bridging the digital divide with assistive tools",
+      title: "Technology Panel Discussion"
+    },
+    {
+      src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.55 AM (2).jpeg",
+      alt: "Youth panelists at the Technology session of the Inclusive Youth Policy Dialogue",
+      title: "Youth Technology Panelists"
+    },
+    {
+      src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.56 AM.jpeg",
+      alt: "Panelist speaking on Agribusiness - Food security through accessible innovation",
+      title: "Agribusiness Panelist"
+    },
+    {
+      src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.56 AM (1).jpeg",
+      alt: "Panel moderator facilitating discussion at the Inclusive Youth Policy Dialogue",
+      title: "Panel Moderator"
+    },
+    {
+      src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.57 AM.jpeg",
+      alt: "Agribusiness panel - Food security through accessible innovation at British Council",
+      title: "Agribusiness Panel Full View"
+    },
+    {
+      src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.57 AM (1).jpeg",
+      alt: "Moderator and panelist in conversation during the Policy Dialogue",
+      title: "Panel Conversation"
+    },
+    {
+      src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.57 AM (2).jpeg",
+      alt: "Diverse audience of PWDs, partners, and stakeholders at the British Council event",
+      title: "Event Audience"
+    },
+    {
+      src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.57 AM (3).jpeg",
+      alt: "Green Gold panelist speaking on agribusiness and sustainability",
+      title: "Green Gold Panelist"
+    },
+    {
+      src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.58 AM.jpeg",
+      alt: "Stage presentation with sign language interpreter at the Official Launch",
+      title: "Inclusive Stage Presentation"
     }
   ];
 
@@ -236,12 +296,14 @@ const Gallery = () => {
               const spanClass =
                 index === 0
                   ? "col-span-2 row-span-2"
-                  : index === 3
-                  ? "col-span-2"
-                  : index === 5
-                  ? "col-span-2"
                   : index === 7
+                  ? "col-span-2"
+                  : index === 10
                   ? "col-span-2 row-span-2"
+                  : index === 13
+                  ? "col-span-2"
+                  : index === 17
+                  ? "col-span-2"
                   : "";
               return (
                 <div

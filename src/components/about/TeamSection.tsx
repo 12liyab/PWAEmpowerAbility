@@ -42,10 +42,10 @@ const TeamSection = () => {
       image: '/lovable-uploads/CeCe_PiA.png'
     },
     { 
-      name: 'Michael Kumordzi Tetteh', 
-      position: 'Digital Media & Communications Manager', 
-      firstName: 'michael',
-      image: '/lovable-uploads/Michael 2.png'
+      name: 'Stephen Quarcoo', 
+      position: 'Social Media & Content Manager', 
+      firstName: 'stephen',
+      image: '/lovable-uploads/Stephen_SMC.png'
     },
     { 
       name: 'Caesar Seade', 
