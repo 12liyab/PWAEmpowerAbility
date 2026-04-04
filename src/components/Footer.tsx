@@ -26,7 +26,8 @@ const Footer = () => {
     // { name: 'Master Card Foundation', logo: '/lovable-uploads/Mastercard Foundation.jpeg' },
     { name: 'thenovus.solutions', logo: '/lovable-uploads/2d28e705-1016-4814-9b9e-24c65d441968.png' },
     { name: 'Japan Plant Factory Association', logo: '/lovable-uploads/Adobe Express JPFA.png' },
-    { name: 'National Council for Persons with Disabilities (NCPWD)', logo: '/lovable-uploads/NCPWD-2.png' }
+    { name: 'National Council for Persons with Disabilities (NCPWD)', logo: '/lovable-uploads/NCPWD-2.png' },
+    { name: 'Green Gold Global Group (4G) Biotech Co.', logo: '/lovable-uploads/Green Gold Global .jpeg' }
   ];
 
   useEffect(() => {

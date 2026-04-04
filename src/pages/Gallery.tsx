@@ -53,37 +53,37 @@ const Gallery = () => {
     {
       src: "/lovable-uploads/DSC04706.jpg",
       alt: "Official Launch & Inclusive Youth Policy Dialogue - Keynote address at British Council, Accra",
-      title: "Keynote Address"
+      title: "Volunteer Team in Action"
     },
     {
       src: "/lovable-uploads/DSC04713.jpg",
       alt: "Speaker presenting at the Official Launch & Inclusive Youth Policy Dialogue",
-      title: "Guest Speaker Presentation"
+      title: "Event Registration"
     },
     {
       src: "/lovable-uploads/DSC04755.jpg",
       alt: "Attendee registration at the Official Launch event",
-      title: "Event Registration"
+      title: "Green Gold Global Group(4G) Biotech Team"
     },
     {
       src: "/lovable-uploads/DSC04796.jpg",
       alt: "International guests attending the Inclusive Youth Policy Dialogue",
       title: "International Partners"
     },
-    {
-      src: "/lovable-uploads/DSC04833.jpg",
-      alt: "empowerAbility Org volunteers assisting guests at the British Council event",
-      title: "Volunteer Team in Action"
+     {
+      src: "/lovable-uploads/board 3.jpeg",
+      alt: "Official Launch & Inclusive Youth Policy Dialogue - Executive Director at podium",
+      title: "Executive Director's Address"
     },
     {
       src: "/lovable-uploads/DSC04876.jpg",
       alt: "Distinguished guest delivering remarks at the Official Launch",
-      title: "Ashesi University Speaker" 
+      title: "Guest Speaker Presentation" 
     },
     {
       src: "/lovable-uploads/DSC04923.jpg",
       alt: "Speaker from Ashesi University at the Inclusive Youth Policy Dialogue",
-      title: "Distinguished Remarks"
+      title: "National Council for PWDs' Keynote"
     },
     {
       src: "/lovable-uploads/board 1.jpeg",
@@ -93,62 +93,57 @@ const Gallery = () => {
     {
       src: "/lovable-uploads/board 2.jpeg",
       alt: "Accra Declaration on an Inclusive Future - group signing ceremony",
-      title: "Declaration Group Signing"
-    },
-    {
-      src: "/lovable-uploads/board 3.jpeg",
-      alt: "Official Launch & Inclusive Youth Policy Dialogue - Executive Director at podium",
-      title: "Executive Director's Address"
+      title: "Executive Director signing the Accra Declaration on an Inclusive Future"
     },
     {
       src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.55 AM.jpeg",
       alt: "Ashesi University speaker addressing the Official Launch & Inclusive Youth Policy Dialogue",
-      title: "Ashesi University Keynote"
+      title: "Guest Speaker: Millicent Adjei, Ph.D., Director, International Programs and Campus Cohesion, Ashesi University"
     },
     {
       src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.55 AM (1).jpeg",
       alt: "Technology panel discussion - Bridging the digital divide with assistive tools",
-      title: "Technology Panel Discussion"
+      title: "The Tech Leap Panel"
     },
     {
       src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.55 AM (2).jpeg",
       alt: "Youth panelists at the Technology session of the Inclusive Youth Policy Dialogue",
-      title: "Youth Technology Panelists"
+      title: "The Teach Leap Panelists"
     },
     {
       src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.56 AM.jpeg",
       alt: "Panelist speaking on Agribusiness - Food security through accessible innovation",
-      title: "Agribusiness Panelist"
+      title: "The Agri & Health Panelist: Grace Naa Ardua Nelson, Pharmacist and Public Health Advocate"
     },
     {
       src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.56 AM (1).jpeg",
       alt: "Panel moderator facilitating discussion at the Inclusive Youth Policy Dialogue",
-      title: "Panel Moderator"
+      title: "Agri & Health Panel Moderator"
     },
     {
       src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.57 AM.jpeg",
       alt: "Agribusiness panel - Food security through accessible innovation at British Council",
-      title: "Agribusiness Panel Full View"
+      title: "Agri & Health Panel Discussion"
     },
     {
       src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.57 AM (1).jpeg",
       alt: "Moderator and panelist in conversation during the Policy Dialogue",
-      title: "Panel Conversation"
+      title: "Event Audience"
     },
     {
       src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.57 AM (2).jpeg",
       alt: "Diverse audience of PWDs, partners, and stakeholders at the British Council event",
-      title: "Event Audience"
+      title: "Panel Conversation"
     },
     {
       src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.57 AM (3).jpeg",
       alt: "Green Gold panelist speaking on agribusiness and sustainability",
-      title: "Green Gold Panelist"
+      title: "Agri & Health Panelist: Ishmael Genyah, Head, Information Technology & Communication at NCPD"
     },
     {
       src: "/lovable-uploads/WhatsApp Image 2026-04-02 at 11.39.58 AM.jpeg",
       alt: "Stage presentation with sign language interpreter at the Official Launch",
-      title: "Inclusive Stage Presentation"
+      title: "Rita Adiase, Experience Center & Customer Operations Manager at Telecel Ghana, and her incredible team"
     }
   ];
 
