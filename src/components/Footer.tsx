@@ -205,7 +205,7 @@ const Footer = () => {
             </p>
           </div>
           <p className="text-gray-400 text-sm text-center">
-            © 2025 thenovus.solutuons. All rights reserved. | enabledability.org
+            © 2026 thenovus.solutuons. All rights reserved. | enabledability.org
           </p>
         </div>
       </div>
